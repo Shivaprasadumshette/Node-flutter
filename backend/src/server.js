@@ -12,7 +12,7 @@ app.use(bodyparser.json());
 
 mongoose.connect("mongodb+srv://shiva:1234@cluster0.nvwmc0h.mongodb.net/notesdb").then(function () {
     app.get('/',function(req,res){
-        const response = {message: "API works!"};
+        const response = {message: "API works and is deployed!"};
         res.json(response);
 
     })
